@@ -5,9 +5,9 @@ import io
 import os
 
 # 🔤 加载中文字体
-font_path = "fonts/simhei.ttf"
+font_path = "fonts/DFPHeiW7-GB Regular.ttf"
 if not os.path.exists(font_path):
-    st.error("❌ 找不到字体文件 simhei.ttf，请确保它在 fonts 文件夹下")
+    st.error("❌ 找不到字体文件，请确保它在 fonts 文件夹下")
 else:
     font_prop = font_manager.FontProperties(fname=font_path)
 
