@@ -4,7 +4,7 @@ import matplotlib
 import io
 
 # 让图表支持中文
-matplotlib.rcParams['font.family'] = 'SimHei'  # 使用黑体，支持中文
+matplotlib.rcParams['font.family'] = 'Microsoft YaHei'  # 微软雅黑
 matplotlib.rcParams['axes.unicode_minus'] = False  # 让负号正常显示
 
 st.title("辅助能力数据表生成工具")
