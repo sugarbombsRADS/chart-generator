@@ -10,10 +10,6 @@ my_font = font_manager.FontProperties(fname=font_path)
 matplotlib.rcParams['font.family'] = my_font.get_name()
 matplotlib.rcParams['axes.unicode_minus'] = False
 
-# 让图表支持中文
-matplotlib.rcParams['font.family'] = 'DFPHeiW7-GB Regular'  # 微软雅黑
-matplotlib.rcParams['axes.unicode_minus'] = False  # 让负号正常显示
-
 st.title("辅助能力数据表生成工具")
 st.write("输入数据来生成图标折线图，并可导出为 PNG 图片。")
 
