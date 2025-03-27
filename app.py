@@ -7,7 +7,7 @@ import os
 
 # 📌 加载自带字体，用于中文显示
 from matplotlib import font_manager
-font_path = "DFPHeiW7-GB Regular.ttf"
+font_path = "fonts/DFPHeiW7-GB Regular.ttf"
 font_prop = font_manager.FontProperties(fname=font_path)
 
 st.title("辅助能力数据图表生成工具")
