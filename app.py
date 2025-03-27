@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import io
 
 st.title("辅助能力数据表生成工具")
-st.write("输入数据来生成图标，并可导出为 PNG 图片。")
+st.write("输入数据来生成图标折线图，并可导出为 PNG 图片。")
 
 x = st.text_input("属性数值（逗号分隔）", "1, 15, 30, 60, 100")
 y = st.text_input("效果数值（逗号分隔）", "10, 40, 65, 85, 100")
