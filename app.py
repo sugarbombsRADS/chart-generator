@@ -2,6 +2,13 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import matplotlib
 import io
+from matplotlib import font_manager
+
+# 手动加载中文字体
+font_path = "DFPHeiW7-GB Regular.ttf"  # 相对路径
+my_font = font_manager.FontProperties(fname=font_path)
+matplotlib.rcParams['font.family'] = my_font.get_name()
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 # 让图表支持中文
 matplotlib.rcParams['font.family'] = 'DFPHeiW7-GB Regular'  # 微软雅黑
