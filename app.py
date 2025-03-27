@@ -5,12 +5,12 @@ import io
 st.title("辅助能力数据表生成工具")
 st.write("输入数据来生成图标，并可导出为 PNG 图片。")
 
-x = st.text_input("X 轴数值（逗号分隔）", "1, 15, 30, 60, 100")
-y = st.text_input("Y 轴数值（逗号分隔）", "10, 40, 65, 85, 100")
+x = st.text_input("属性数值（逗号分隔）", "1, 15, 30, 60, 100")
+y = st.text_input("效果数值（逗号分隔）", "10, 40, 65, 85, 100")
 
-x_label = st.text_input("X 轴名称", "Strength")
-y_label = st.text_input("Y 轴名称", "Carry Weight")
-title = st.text_input("图标标题", "Strong Back")
+x_label = st.text_input("属性名称", "Strength")
+y_label = st.text_input("效果名称", "Carry Weight")
+title = st.text_input("辅助能力名称", "Strong Back")
 
 # 转换字符串为数字列表
 try:
