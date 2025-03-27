@@ -11,7 +11,7 @@ if not os.path.exists(font_path):
 else:
     font_prop = font_manager.FontProperties(fname=font_path)
 
-    st.title("图标生成小工具（支持中文 & 参考线）")
+    st.title("辅助能力数据生成工具（支持中文与参考线）")
     st.write("输入数据生成图表，可导出 PNG，支持添加参考线与中文显示")
 
     x = st.text_input("属性数值（逗号分隔）", "1, 15, 30, 60, 100")
