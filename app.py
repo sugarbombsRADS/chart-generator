@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import io
 
-st.title("图标生成小工具")
+st.title("辅助能力数据表生成工具")
 st.write("输入数据来生成图标，并可导出为 PNG 图片。")
 
 x = st.text_input("X 轴数值（逗号分隔）", "1, 15, 30, 60, 100")
