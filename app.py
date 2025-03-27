@@ -6,13 +6,9 @@ import io
 import os
 
 # 📌 加载自带字体，用于中文显示
+from matplotlib import font_manager
 font_path = "DFPHeiW7-GB Regular.ttf"
-if os.path.exists(font_path):
-    font_prop = font_manager.FontProperties(fname=font_path)
-    matplotlib.rcParams['font.family'] = font_prop.get_name()
-else:
-    matplotlib.rcParams['font.family'] = 'SimHei'  # 默认尝试黑体
-matplotlib.rcParams['axes.unicode_minus'] = False
+font_prop = font_manager.FontProperties(fname=font_path)
 
 st.title("辅助能力数据图表生成工具")
 st.write("输入数据来生成图表，并可导出为 PNG 图片。支持添加参考线和中文显示。")
